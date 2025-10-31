@@ -17,13 +17,19 @@ const getPosts = async () => {
       const { data, content } = matter(file);
 
       const processed = await remark().use(html).process(content);
-      const contentHtml = processed.toString();
+      let contentHtml = processed.toString();
+
+      const imagePathPrefix = `/posts/${folder}/images/`;
+      contentHtml = contentHtml.replace(
+        /src="\.\/images\//g,
+        `src="${imagePathPrefix}`
+      );
 
       return {
         slug: folder,
         ...data,
         content: contentHtml,
-        imagesPath: `/posts/${folder}/images/`,
+        imagesPath: imagePathPrefix,
       };
     })
   );
