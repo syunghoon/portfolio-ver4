@@ -1,8 +1,10 @@
-import { useSearchParams } from "react-router";
+import { useSearchParams } from "react-router-dom";
 
 import { CATEGORY, SORT } from "../data/category.js";
 import { getFilteredAndSortedPosts } from "../api/PostApi.js";
 
+import CategoryFilter from "../components/CategoryFilter.jsx";
+import SortDropdown from "../components/SortDropdown.jsx";
 import PostCard from "../components/PostCard.jsx";
 
 function Blog() {
@@ -20,9 +22,9 @@ function Blog() {
     currentSort
   );
 
-  const handleCategoryChange = (e) => {
+  const handleCategoryChange = (category) => {
     setSearchParams((prev) => {
-      prev.set("category", e.target.textContent);
+      prev.set("category", category);
       return prev;
     });
   };
@@ -39,26 +41,18 @@ function Blog() {
       <h1>Blog</h1>
 
       {/* 카테고리 리스트 : 전체, 스터디, 회고 등 ... */}
-      <div className="buttons-container">
-        {CATEGORY_LIST.map((category, idx) => (
-          <button
-            key={idx}
-            onClick={handleCategoryChange}
-            className={category === currentCategory ? "active" : ""}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
+      <CategoryFilter
+        categories={CATEGORY_LIST}
+        currentCategory={currentCategory}
+        onCategoryChange={handleCategoryChange}
+      />
 
       {/* 정렬 옵션: 최신순, 오래된 순 */}
-      <select onChange={handleSortOrderChange} value={currentSort}>
-        {Object.entries(SORT).map(([name, option]) => (
-          <option key={name} value={option.order}>
-            {option.label}
-          </option>
-        ))}
-      </select>
+      <SortDropdown
+        sortOptions={SORT}
+        currentSort={currentSort}
+        onSortChange={handleSortOrderChange}
+      />
 
       {/* 포스트 목록: 카드 그리드 */}
       <div className="cards-grid">
