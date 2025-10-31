@@ -10,6 +10,7 @@ function Blog() {
   const CATEGORY_LIST = ["All", ...CATEGORY[TYPE]];
 
   const [searchParams, setSearchParams] = useSearchParams();
+
   const currentCategory = searchParams.get("category") || "All";
   const currentSort = searchParams.get("sortBy") || SORT.NEWEST.order;
 
@@ -18,20 +19,6 @@ function Blog() {
     currentCategory,
     currentSort
   );
-
-  // 파생된 derived 상태..
-  // searchParams와 원본 데이터인 POSTS만 있으면 언제든지 postList를 계산할 수 있다.
-  // 굳이 별도의 useState로 관리할 필요가 없다.
-  // const [postList, setPostList] = useState(
-  //   POSTS.filter((post) => post.type === "Blog")
-  // );
-
-  // useEffect(() => {
-  //   currentCategory = searchParams.get("category") || "All";
-  //   currentSort = searchParams.get("sortBy") || SORT.NEWEST.order;
-  //   // setPostList(콜백함수(카테고리, 소트옵션))
-  //   setPostList(applyFiltersAndSorting(currentCategory, currentSort));
-  // }, [searchParams]);
 
   const handleCategoryChange = (e) => {
     setSearchParams((prev) => {
@@ -51,16 +38,20 @@ function Blog() {
     <main>
       <h1>Blog</h1>
 
-      {CATEGORY_LIST.map((category, idx) => (
-        <button
-          key={idx}
-          className={category === currentCategory ? "active" : ""}
-          onClick={handleCategoryChange}
-        >
-          {category}
-        </button>
-      ))}
+      {/* 카테고리 리스트 : 전체, 스터디, 회고 등 ... */}
+      <div className="buttons-container">
+        {CATEGORY_LIST.map((category, idx) => (
+          <button
+            key={idx}
+            onClick={handleCategoryChange}
+            className={category === currentCategory ? "active" : ""}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
 
+      {/* 정렬 옵션: 최신순, 오래된 순 */}
       <select onChange={handleSortOrderChange} value={currentSort}>
         {Object.entries(SORT).map(([name, option]) => (
           <option key={name} value={option.order}>
@@ -69,8 +60,11 @@ function Blog() {
         ))}
       </select>
 
+      {/* 포스트 목록: 카드 그리드 */}
       <div className="cards-grid">
-        <PostCard posts={postList} />
+        {postList.map((post) => (
+          <PostCard key={post.slug} post={post} />
+        ))}
       </div>
       <hr />
     </main>

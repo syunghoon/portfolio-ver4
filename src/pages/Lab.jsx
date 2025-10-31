@@ -1,57 +1,58 @@
-import { useState, useEffect } from "react";
-import { useSearchParams } from "react-router";
+import { useEffect, useState } from "react";
 
-import POSTS from "../data/posts.json";
 import { CATEGORY, SORT } from "../data/category.js";
+import { getPosts, getFilteredAndSortedPosts } from "../api/PostApi.js";
+
 import PostCard from "../components/PostCard.jsx";
 
 function Lab() {
-  const CATEGORY_LIST = ["All", ...CATEGORY["Lab"]];
+  const TYPE = "Lab";
+  const CATEGORY_LIST = ["All", ...CATEGORY[TYPE]];
 
-  let currentCategory, currentSort, currentParams;
-
-  const [postList, setPostList] = useState(POSTS);
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [postList, setPostList] = useState(getPosts(TYPE));
+  const [currentCategory, setCurrentCategory] = useState(CATEGORY_LIST[0]);
+  const [currentSort, setCurrentSort] = useState(SORT.NEWEST.order);
 
   useEffect(() => {
-    currentCategory = searchParams.get("category");
-    currentSort = searchParams.get("sortBy");
-    currentParams = Object.fromEntries(searchParams.entries());
-  }, [searchParams]);
+    setPostList(getFilteredAndSortedPosts(TYPE, currentCategory, currentSort));
+  }, [currentCategory, currentSort]);
 
   return (
     <main>
       <h1>Lab</h1>
 
-      <hr />
+      {/* 카테고리 리스트 : 전체, 스터디, 회고 등 ... */}
+      <div className="buttons-container">
+        {CATEGORY_LIST.map((category, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrentCategory(category)}
+            className={category === currentCategory ? "active" : ""}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
 
-      {CATEGORY_LIST.map((category, idx) => (
-        <button
-          key={idx}
-          onClick={(e) =>
-            setSearchParams({
-              ...currentParams,
-              category: e.target.textContent,
-            })
-          }
-        >
-          {category}
-        </button>
-      ))}
-
-      <select onChange={(e) => setSearchParams({ sortBy: e.target.value })}>
+      {/* 정렬 옵션: 최신순, 오래된 순 */}
+      <select
+        value={currentSort}
+        onChange={(e) => setCurrentSort(e.target.value)}
+      >
         {Object.entries(SORT).map(([name, option]) => (
-          <option key={name} value={name}>
+          <option key={name} value={option.order}>
             {option.label}
           </option>
         ))}
       </select>
 
-      <hr />
-
+      {/* 포스트 목록: 카드 그리드 */}
       <div className="cards-grid">
-        <PostCard posts={postList} />
+        {postList.map((post) => (
+          <PostCard key={post.slug} post={post} />
+        ))}
       </div>
+      <hr />
     </main>
   );
 }
