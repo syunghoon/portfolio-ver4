@@ -1,4 +1,4 @@
-import "../styles/detail.css";
+import "./PostDetail.css";
 
 function PostDetail({ post }) {
   return (

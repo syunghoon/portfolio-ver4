@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 
 import { CATEGORY, SORT } from "../data/category.js";
 import { getFilteredAndSortedPosts } from "../api/PostApi.js";
-import CategoryFilter from "../components/CategoryFilter.jsx";
-import SortDropdown from "../components/SortDropdown.jsx";
-import PostCard from "../components/PostCard.jsx";
+import CategoryFilter from "../components/CategoryFilter/CategoryFilter.jsx";
+import SortDropdown from "../components/SortDropdown/SortDropdown.jsx";
+import PostCard from "../components/PostCard/PostCard.jsx";
 
 function Lab() {
   const TYPE = "Lab";

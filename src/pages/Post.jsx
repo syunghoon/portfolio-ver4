@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { getPostDetail } from "../api/PostApi";
-import PostDetail from "../components/PostDetail";
+import PostDetail from "../components/PostDetail/PostDetail";
 
 function Post() {
   const { slug } = useParams();

@@ -1,8 +1,8 @@
 import { useState, useMemo } from "react";
 import { CATEGORY, SORT } from "../data/category.js";
 import POSTS from "../data/posts.json";
-import CategoryFilter from "../components/CategoryFilter.jsx";
-import SortDropdown from "../components/SortDropdown.jsx";
+import CategoryFilter from "../components/CategoryFilter/CategoryFilter.jsx";
+import SortDropdown from "../components/SortDropdown/SortDropdown.jsx";
 
 // 대분류에 맞는 태그목록 설정
 const TYPE = "Projects";

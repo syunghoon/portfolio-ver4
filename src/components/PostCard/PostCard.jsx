@@ -1,4 +1,4 @@
-import "../styles/card.css";
+import "./PostCard.css";
 import { useNavigate } from "react-router-dom";
 
 export default function PostCard({ post }) {
