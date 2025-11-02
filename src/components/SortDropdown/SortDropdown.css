@@ -1,0 +1,15 @@
+.sort-dropdown {
+  border: none;
+  border-radius: 9999px;
+  background-size: 0.5rem 0.5rem, 0.5rem 0.5rem;
+  background-repeat: no-repeat;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--primary-gray);
+  cursor: pointer;
+}
+
+.sort-dropdown option {
+  color: var(--primary-gray);
+}
