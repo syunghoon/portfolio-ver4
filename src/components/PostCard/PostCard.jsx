@@ -1,4 +1,7 @@
-import "./PostCard.css";
+import "./PostCard.base.css";
+import "./PostCard.blog.css";
+import "./PostCard.lab.css";
+import "./PostCard.projects.css";
 import { useNavigate } from "react-router-dom";
 
 export default function PostCard({ post, type }) {
@@ -6,6 +9,8 @@ export default function PostCard({ post, type }) {
   const resolvedType = (type ?? post.type ?? "").toLowerCase();
 
   const isBlog = resolvedType === "blog";
+  const isLab = resolvedType === "lab";
+  const isProjects = resolvedType === "projects";
 
   const formatDate = (dateString) => {
     if (!dateString) return "";
@@ -18,7 +23,7 @@ export default function PostCard({ post, type }) {
     });
   };
 
-  const formattedDate = isBlog ? formatDate(post?.date) : "";
+  const formattedDate = post?.date ? formatDate(post.date) : "";
 
   return (
     <article
@@ -30,17 +35,30 @@ export default function PostCard({ post, type }) {
           {post.category && (
             <span className="post-card__category">{post.category}</span>
           )}
-          {formattedDate && (
-            <time className="post-card__date" dateTime={post.date}>
-              {formattedDate}
-            </time>
-          )}
+
+          <time className="post-card__date" dateTime={post.date}>
+            {formattedDate}
+          </time>
         </div>
       )}
 
       <div className="post-card__body">
         <h2 className="post-card__title">{post.title}</h2>
         {post.summary && <p className="post-card__summary">{post.summary}</p>}
+        {isLab && (
+          <time className="post-card__date" dateTime={post.date}>
+            {formattedDate}
+          </time>
+        )}
+        {isProjects && (
+          <div className="post-card__tags">
+            {post.tags.map((tag) => (
+              <div key={tag} className="post-card__tag">
+                {tag}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       <img

@@ -11,10 +11,109 @@
     "title": "TEST",
     "date": "2025-10-20",
     "summary": "테스트 원",
-    "type": "Blog",
+    "type": "Lab",
     "category": "UX/UI",
     "tags": ["app", "habit", "design"],
     "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
     "imagesPath": "/posts/2025-10-28-TEST/images/"
+  },
+  {
+    "slug": "2025-10-28-TEST",
+    "title": "TEST",
+    "date": "2025-10-20",
+    "summary": "테스트 원",
+    "type": "Blog",
+    "category": "Study",
+    "tags": ["app", "habit", "design"],
+    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "imagesPath": "/posts/2025-10-28-TEST/images/"
+  },
+  {
+    "slug": "2025-10-28-TEST",
+    "title": "TEST",
+    "date": "2025-10-20",
+    "summary": "테스트 원",
+    "type": "Blog",
+    "category": "Study",
+    "tags": ["app", "habit", "design"],
+    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "imagesPath": "/posts/2025-10-28-TEST/images/"
+  },
+  {
+    "slug": "2025-10-28-TEST",
+    "title": "TEST",
+    "date": "2025-10-20",
+    "summary": "테스트 원",
+    "type": "Blog",
+    "category": "Study",
+    "tags": ["app", "habit", "design"],
+    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "imagesPath": "/posts/2025-10-28-TEST/images/"
+  },
+  {
+    "slug": "2025-10-28-TEST",
+    "title": "TEST",
+    "date": "2025-10-20",
+    "summary": "테스트 원",
+    "type": "Blog",
+    "category": "Study",
+    "tags": ["app", "habit", "design"],
+    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "imagesPath": "/posts/2025-10-28-TEST/images/"
+  },
+  {
+    "slug": "2025-10-28-TEST",
+    "title": "TEST",
+    "date": "2025-10-20",
+    "summary": "테스트 원",
+    "type": "Blog",
+    "category": "Study",
+    "tags": ["app", "habit", "design"],
+    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "imagesPath": "/posts/2025-10-28-TEST/images/"
+  },
+  {
+    "slug": "Projects-square",
+    "title": "TEST",
+    "date": "2025-10-20",
+    "summary": "테스트 원",
+    "type": "Projects",
+    "category": "UX/UI",
+    "tags": ["app", "habit", "design"],
+    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "imagesPath": "/posts/Projects-square/images/"
+  },
+  {
+    "slug": "Projects-tall",
+    "title": "TEST",
+    "date": "2025-10-20",
+    "summary": "테스트 원",
+    "type": "Projects",
+    "category": "Frontend",
+    "tags": ["app", "habit", "design"],
+    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "imagesPath": "/posts/Projects-tall/images/"
+  },
+  {
+    "slug": "Projects-wide",
+    "title": "TEST",
+    "date": "2025-10-20",
+    "summary": "테스트 원",
+    "type": "Projects",
+    "category": "Frontend",
+    "tags": ["app", "habit", "design"],
+    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "imagesPath": "/posts/Projects-wide/images/"
+  },
+  {
+    "slug": "Projects-tall",
+    "title": "TEST",
+    "date": "2025-10-20",
+    "summary": "테스트 원",
+    "type": "Projects",
+    "category": "Frontend",
+    "tags": ["app", "habit", "design"],
+    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "imagesPath": "/posts/Projects-tall/images/"
   }
 ]

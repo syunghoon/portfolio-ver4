@@ -1,49 +1,59 @@
-import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 
 import { CATEGORY, SORT } from "../data/category.js";
 import { getFilteredAndSortedPosts } from "../api/PostApi.js";
-import CategoryFilter from "../components/CategoryFilter/CategoryFilter.jsx";
-import SortDropdown from "../components/SortDropdown/SortDropdown.jsx";
+
+import ContentToolbar from "../components/ContentToolbar/ContentToolbar.jsx";
 import PostCard from "../components/PostCard/PostCard.jsx";
 
 function Lab() {
   const TYPE = "Lab";
   const CATEGORY_LIST = ["All", ...CATEGORY[TYPE]];
 
-  const [postList, setPostList] = useState([]);
-  const [currentCategory, setCurrentCategory] = useState(CATEGORY_LIST[0]);
-  const [currentSort, setCurrentSort] = useState(SORT.NEWEST.order);
+  const [searchParams, setSearchParams] = useSearchParams();
 
-  useEffect(() => {
-    setPostList(getFilteredAndSortedPosts(TYPE, currentCategory, currentSort));
-  }, [currentCategory, currentSort]);
+  const currentCategory = searchParams.get("category") || "All";
+  const currentSort = searchParams.get("sortBy") || SORT.NEWEST.order;
+
+  const postList = getFilteredAndSortedPosts(
+    TYPE,
+    currentCategory,
+    currentSort
+  );
+
+  const handleCategoryChange = (category) => {
+    setSearchParams((prev) => {
+      prev.set("category", category);
+      return prev;
+    });
+  };
+
+  const handleSortOrderChange = (e) => {
+    setSearchParams((prev) => {
+      prev.set("sortBy", e.target.value);
+      return prev;
+    });
+  };
 
   return (
-    <main>
-      <h1>Lab</h1>
+    <section className="page-section">
+      <h1>{TYPE}</h1>
 
-      {/* 카테고리 리스트 : 전체, 스터디, 회고 등 ... */}
-      <CategoryFilter
+      <ContentToolbar
         categories={CATEGORY_LIST}
         currentCategory={currentCategory}
-        onCategoryChange={setCurrentCategory}
-      />
-
-      {/* 정렬 옵션: 최신순, 오래된 순 */}
-      <SortDropdown
+        onCategoryChange={handleCategoryChange}
         sortOptions={SORT}
         currentSort={currentSort}
-        onSortChange={(e) => setCurrentSort(e.target.value)}
+        onSortChange={handleSortOrderChange}
       />
 
-      {/* 포스트 목록: 카드 그리드 */}
-      <div className="post-card-list post-card-list--lab">
+      <div className={`post-card-list post-card-list--${TYPE.toLowerCase()}`}>
         {postList.map((post) => (
           <PostCard key={post.slug} post={post} type={TYPE} />
         ))}
       </div>
-      <hr />
-    </main>
+    </section>
   );
 }
 
