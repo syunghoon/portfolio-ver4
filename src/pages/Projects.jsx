@@ -54,18 +54,21 @@ function Projects() {
         onSortChange={(e) => setSortOrder(e.target.value)}
       />
 
-      <div className="cards-grid">
+      <div className="post-card-list post-card-list--projects">
         {/* ProjectsCard 컴포넌트 분리 예정 */}
         {sortedPosts.map((post) => (
-          <article key={post.slug} className="card">
+          <article
+            key={post.slug}
+            className="post-card post-card--projects"
+          >
             <img
               src={post.imagesPath + "cover.png"}
               alt={post.title}
-              className="card-cover"
+              className="post-card__cover"
             />
-            <div className="card-body">
-              <h2 className="card-title">{post.title}</h2>
-              <p className="card-summary">{post.summary}</p>
+            <div className="post-card__body">
+              <h2 className="post-card__title">{post.title}</h2>
+              <p className="post-card__summary">{post.summary}</p>
             </div>
           </article>
         ))}

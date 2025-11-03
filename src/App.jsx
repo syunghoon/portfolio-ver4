@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Lab from "./pages/Lab";
 import Blog from "./pages/Blog";
-import Post from "./pages/Post";
+import Post from "./pages/Posts";
 import Header from "./components/header/Header";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/lab" element={<Lab />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/post/:slug" element={<Post />} />
+            <Route path="/posts/:slug" element={<Post />} />
           </Routes>
         </div>
       </main>

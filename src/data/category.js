@@ -1,9 +1,3 @@
-export const POST = {
-  Projects: "Projects",
-  Lab: "Lab",
-  Blog: "Blog",
-};
-
 export const CATEGORY = {
   Projects: ["UX/UI", "Frontend", "Interaction", "Visual"],
   Lab: [

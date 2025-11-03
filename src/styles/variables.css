@@ -1,13 +1,14 @@
 :root {
   --primary-bg: #ffffff;
+  /* --primary-bg: #b9b6a7; */
   --secondary-bg: #f2f4f7;
-  --primary-gray: #101828;
+  --primary-gray: #a09b88;
   --secondary-gray: #344054;
   --tertiary-gray: #475467;
   --quaternary-gray: #667085;
 
   --header-height: 4rem;
-  --layout-max-width: 90rem;
+  --layout-max-width: 70rem;
   --layout-padding-inline: 3rem;
 
   --primary-200: #88d9f8;

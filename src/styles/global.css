@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 @import "./variables.css";
+@import "./reset.css";
 
 @font-face {
   font-family: "Paperlogy-7Bold";
@@ -23,6 +24,7 @@ body {
 }
 
 main.page-content {
+  padding-inline: var(--layout-padding-inline);
   padding-top: calc(var(--header-height) + 2rem);
   padding-bottom: 4rem;
 }

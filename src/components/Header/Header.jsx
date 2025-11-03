@@ -8,9 +8,11 @@ function Header() {
       <div className="site-header__container">
         <div className="site-header__left">
           <Link to="/" className="site-header__brand" aria-label="Go to home">
-            <h4 className="site-header__brand-name">Shane Ohmuni</h4>
+            <h4 className="site-header__brand-name">Sung-Hoon Cho</h4>
           </Link>
+        </div>
 
+        <div className="site-header__right">
           <nav className="site-header__nav" aria-label="Primary navigation">
             <Link to="/projects" className="site-header__link">
               Projects

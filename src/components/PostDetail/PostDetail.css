@@ -1,84 +1,84 @@
 .post-detail {
-  max-width: 720px;
+  max-width: 45rem;
   margin: 0 auto;
-  padding: 40px 20px;
-  font-family: "Pretendard", system-ui, sans-serif;
-  color: #222;
+  padding: 2.5rem 1.25rem;
+  font-family: var(--font-body), system-ui, sans-serif;
+  color: var(--secondary-gray);
   line-height: 1.7;
 }
 
-.post-detail h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+.post-detail__title {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  color: var(--secondary-gray);
 }
 
-.post-date {
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 2rem;
+.post-detail__date {
+  margin: 0 0 2rem;
+  font-size: var(--text-sm);
+  color: var(--quaternary-gray);
 }
 
-/* 본문 콘텐츠 */
-.post-content {
-  font-size: 1rem;
+.post-detail__content {
+  font-size: var(--text-base);
 }
 
-.post-content p {
+.post-detail__content p {
   margin: 1.25rem 0;
 }
 
-.post-content h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
+.post-detail__content h2 {
   margin: 2rem 0 1rem;
+  font-family: var(--font-heading), system-ui, sans-serif;
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+  color: var(--secondary-gray);
 }
 
-.post-content ul,
-.post-content ol {
+.post-detail__content ul,
+.post-detail__content ol {
   margin: 1.25rem 0;
   padding-left: 1.5rem;
 }
 
-.post-content li {
+.post-detail__content li {
   margin: 0.5rem 0;
 }
 
-/* 코드 블록 */
-.post-content pre {
-  background: #1e1e1e;
-  color: #90c687;
+.post-detail__content pre {
+  margin: 1.5rem 0;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-gray);
+  color: var(--primary-bg);
   overflow-x: auto;
   font-family: "Fira Code", monospace;
   line-height: 1.6;
 }
 
-.post-content p code {
-  font-family: "Pretendard", system-ui, sans-serif;
-
-  background: #f5f5dc;
-  color: #1e1e1e;
-  padding: 2px 4px;
-  border-radius: 4px;
+.post-detail__content p code {
+  font-family: var(--font-body), system-ui, sans-serif;
+  background-color: var(--secondary-bg);
+  color: var(--secondary-gray);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
 }
 
-/* 이미지 */
-.post-content img {
+.post-detail__content img {
   width: 100%;
-  max-width: 720px;
-  border-radius: 12px;
-  margin: 24px 0;
+  max-width: 45rem;
+  margin: 1.5rem 0;
+  border-radius: 0.75rem;
 }
 
-/* 링크 */
-.post-content a {
-  color: #0070f3;
+.post-detail__content a {
+  color: var(--primary-500);
   text-decoration: underline;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s ease;
 }
 
-.post-content a:hover {
-  opacity: 0.7;
+.post-detail__content a:hover {
+  opacity: 0.75;
 }

@@ -37,9 +37,9 @@ function Lab() {
       />
 
       {/* 포스트 목록: 카드 그리드 */}
-      <div className="cards-grid">
+      <div className="post-card-list post-card-list--lab">
         {postList.map((post) => (
-          <PostCard key={post.slug} post={post} />
+          <PostCard key={post.slug} post={post} type={TYPE} />
         ))}
       </div>
       <hr />

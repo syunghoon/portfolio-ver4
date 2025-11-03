@@ -5,15 +5,12 @@ import PostDetail from "../components/PostDetail/PostDetail";
 function Post() {
   const { slug } = useParams();
 
-  console.log(slug);
-
   const post = getPostDetail(slug);
 
   return (
     <>
-      <div>글</div>
-      <p>이곳의 슬러그는 다음과 같음: {slug}</p>
       <PostDetail post={post} />
+      {/* Related Posts 컴포넌트도 만들어서 넣을 수 있을듯 */}
     </>
   );
 }

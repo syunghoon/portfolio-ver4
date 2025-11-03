@@ -48,9 +48,9 @@ function Blog() {
         onSortChange={handleSortOrderChange}
       />
 
-      <div className="cards-grid">
+      <div className={`post-card-list post-card-list--${TYPE.toLowerCase()}`}>
         {postList.map((post) => (
-          <PostCard key={post.slug} post={post} />
+          <PostCard key={post.slug} post={post} type={TYPE} />
         ))}
       </div>
     </section>
