@@ -6,6 +6,7 @@ import html from "remark-html";
 
 const POSTS_SOURCE_DIR = "./posts";
 const PUBLIC_POSTS_DIR = "./public/posts";
+const PUBLIC_IMAGES_PREFIX = "/posts";
 const OUTPUT = "./src/data/posts.json";
 
 const normalizeFolders = () => {
@@ -54,7 +55,7 @@ const getPosts = async () => {
       const processed = await remark().use(html).process(content);
       let contentHtml = processed.toString();
 
-      const imagePathPrefix = `${PUBLIC_POSTS_DIR}/${folder}/images/`;
+      const imagePathPrefix = `${PUBLIC_IMAGES_PREFIX}/${folder}/images/`;
       contentHtml = contentHtml.replace(
         /src="\.\/images\//g,
         `src="${imagePathPrefix}`
