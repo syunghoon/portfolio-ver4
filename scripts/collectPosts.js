@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-const POSTS_DIR = "./posts";
+const POSTS_DIR = "./public/posts";
 const OUTPUT = "./src/data/posts.json";
 
 const getPosts = async () => {
