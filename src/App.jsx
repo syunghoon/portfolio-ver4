@@ -5,7 +5,8 @@ import Projects from "./pages/Projects";
 import Lab from "./pages/Lab";
 import Blog from "./pages/Blog";
 import Post from "./pages/Posts";
-import Header from "./components/header/Header";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           </Routes>
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
