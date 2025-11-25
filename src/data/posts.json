@@ -7,17 +7,6 @@
     "imagesPath": "/posts/0000-ABOUT/images/"
   },
   {
-    "slug": "2025-10-28-TEST",
-    "title": "TEST",
-    "date": "2025-10-20",
-    "summary": "테스트 원",
-    "type": "Projects",
-    "category": "UX/UI",
-    "tags": ["app", "habit", "design"],
-    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<h1>H1</h1>\n<h2>H2</h2>\n<h3>H3</h3>\n<h4>H4</h4>\n<h5>H5</h5>\n<h6>H6</h6>\n<ul>\n<li>dot numbering</li>\n<li>dot numbering</li>\n<li>dot numbering</li>\n</ul>\n<ol>\n<li>숫자 1</li>\n<li>숫자 2</li>\n<li>숫자 3</li>\n</ol>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n<p><img src=\"/posts/2025-10-28-TEST/images/cover.png\" alt=\"테스트 이미지\"></p>\n<p><img src=\"/posts/2025-10-28-TEST/images/%EC%96%B4%EB%93%9C%EB%B2%A4%EC%8A%A4%EB%93%9C%EB%B9%85%EC%BF%BC%EB%A6%AC.png\" alt=\"어드벤스드빅쿼리\"></p>\n",
-    "imagesPath": "/posts/2025-10-28-TEST/images/"
-  },
-  {
     "slug": "Projects-square",
     "title": "TEST",
     "date": "2025-10-20",
@@ -25,7 +14,7 @@
     "type": "Projects",
     "category": "UX/UI",
     "tags": ["app", "habit", "design"],
-    "content": "<h1>마크다운 파일</h1>\n<h2>들어가기 전</h2>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
+    "content": "<h1>마크다운 파일</h1>\n<p>들어가기 전 <code>ㅋㅋ</code></p>\n<p>ㅋㅋ</p>\n<ol>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n<li>넘버링 테스트</li>\n</ol>\n<ul>\n<li>닷 테스트</li>\n<li>닷 테스트</li>\n</ul>\n<pre><code class=\"language-js\">// 코드 작성 테스트\r\nconsole.log(\"hello world!\");\n</code></pre>\n<pre><code class=\"language-js\">const run = async () => {\r\n  const posts = await getPosts();\r\n  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });\r\n  fs.writeFileSync(OUTPUT, JSON.stringify(posts, null, 2));\r\n  console.log(\"✅ posts.json generated:\", OUTPUT);\r\n};\r\n\r\nrun();\n</code></pre>\n<ul>\n<li>[ ] 가나다</li>\n<li>[ ] 가나다</li>\n</ul>\n<p><img src=\"https://i.namu.wiki/i/XDH2CDz5hQ_safBefBCvz7NOl8fiXoMg0HSIqhogw9XczaoE8N6rp9pS6Jz--_w8tX69eXr8NRRzUzUwnT-YPg.webp\" alt=\"이미지 테스트\"></p>\n",
     "imagesPath": "/posts/Projects-square/images/"
   },
   {

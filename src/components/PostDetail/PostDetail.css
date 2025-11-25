@@ -46,14 +46,12 @@
   background-color: var(--secondary-gray);
   color: var(--primary-bg);
   overflow-x: auto;
-  font-family: "Fira Code", monospace;
   line-height: 1.6;
 }
 
 .post-detail__content p code {
-  font-family: var(--font-body), system-ui, sans-serif;
   background-color: var(--secondary-bg);
-  color: var(--secondary-gray);
+  color: var(--primary-bg);
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
 }
