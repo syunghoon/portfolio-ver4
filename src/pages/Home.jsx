@@ -1,7 +1,11 @@
 import React from "react";
 
 function Home() {
-  return <h1>Home</h1>;
+  return (
+    <section className="page-section">
+      <h1>Product Designer</h1>
+    </section>
+  );
 }
 
 export default Home;

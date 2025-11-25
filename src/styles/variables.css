@@ -1,7 +1,7 @@
 :root {
-  --primary-bg: #ffffff;
+  /* --primary-bg: #ffffff; */
   --primary-bg: #f5f5dc;
-  --secondary-bg: #f2f4f7;
+  --secondary-bg: #a09b88;
   --primary-gray: #101828;
   --secondary-gray: #344054;
   --tertiary-gray: #475467;
@@ -17,8 +17,9 @@
   --primary-500: #1a91d1;
   --highlight: #afd87c;
 
-  --font-heading: "Paperlogy-7Bold";
+  --font-heading: "Pretendard Variable";
   --font-body: "Pretendard Variable";
+  --font-light: 300;
   --font-medium: 500;
   --font-bold: 700;
 

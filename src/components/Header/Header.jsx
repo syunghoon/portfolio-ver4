@@ -3,9 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
-  const getNavLinkClass = ({ isActive }) =>
-    `site-header__link${isActive ? " site-header__link--active" : ""}`;
-
   return (
     <header className="site-header">
       <div className="site-header__container">
@@ -17,17 +14,17 @@ function Header() {
 
         <div className="site-header__right">
           <nav className="site-header__nav" aria-label="Primary navigation">
-            <NavLink to="/projects" className={getNavLinkClass}>
+            <NavLink to="/projects" className="site-header__link">
               Projects
             </NavLink>
-            <NavLink to="/lab" className={getNavLinkClass}>
+            <NavLink to="/lab" className="site-header__link">
               Lab
             </NavLink>
-            <NavLink to="/blog" className={getNavLinkClass}>
+            <NavLink to="/blog" className="site-header__link">
               Blog
             </NavLink>
 
-            <NavLink to="/posts/0000-ABOUT" className={getNavLinkClass}>
+            <NavLink to="/posts/0000-ABOUT" className="site-header__link">
               About
             </NavLink>
           </nav>

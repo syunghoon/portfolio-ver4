@@ -64,7 +64,7 @@
   background-color: var(--secondary-fill);
 }
 
-.site-header__link--active {
+.site-header__link.active {
   font-weight: var(--font-bold);
   border-bottom: 2px solid currentColor;
 }

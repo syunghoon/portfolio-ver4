@@ -25,12 +25,6 @@
   border-top: 1px solid rgba(102, 112, 133, 0.2);
 }
 
-.post-card--blog:hover {
-  transform: none;
-  background-color: rgba(142, 151, 166, 0.08);
-  box-shadow: none;
-}
-
 .post-card--blog .post-card__meta {
   display: flex;
   flex-direction: column;

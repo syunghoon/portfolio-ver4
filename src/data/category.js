@@ -1,13 +1,7 @@
 export const CATEGORY = {
-  Projects: ["UX/UI", "Frontend", "Interaction", "Visual"],
-  Lab: [
-    "Prototype",
-    "AI / Automation",
-    "Interaction",
-    "Tool Exploration",
-    "Data Visualization",
-  ],
-  Blog: ["Study", "Process Note", "Reflection"],
+  Projects: ["UX/UI", "Frontend"],
+  Lab: ["Interaction", "Visual", "Component"],
+  Blog: ["Design", "Research", "Development"],
 };
 
 export const SORT = {
