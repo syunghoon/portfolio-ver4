@@ -1,4 +1,5 @@
 import React from "react";
+import MotionCanvas from "../components/home/MotionCanvas/MotionCanvas";
 
 function Home() {
   return (
@@ -7,6 +8,7 @@ function Home() {
       <div className="content-toolbar">
         <p className="category-filter__button">테스트 이름</p>
       </div>
+      <MotionCanvas />
     </section>
   );
 }

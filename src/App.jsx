@@ -5,8 +5,8 @@ import Projects from "./pages/Projects";
 import Lab from "./pages/Lab";
 import Blog from "./pages/Blog";
 import Post from "./pages/Posts";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/layouts/Header/Header";
+import Footer from "./components/layouts/Footer/Footer";
 
 function App() {
   return (

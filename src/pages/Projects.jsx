@@ -3,8 +3,8 @@ import { useSearchParams } from "react-router-dom";
 import { CATEGORY, SORT } from "../data/category.js";
 import { getFilteredAndSortedPosts } from "../api/PostApi.js";
 
-import ContentToolbar from "../components/ContentToolbar/ContentToolbar.jsx";
-import PostCard from "../components/PostCard/PostCard.jsx";
+import ContentToolbar from "../components/common/ContentToolbar/ContentToolbar.jsx";
+import PostCard from "../components/post/PostCard/PostCard.jsx";
 
 function Projects() {
   const TYPE = "Projects";
