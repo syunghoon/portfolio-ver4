@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "organization": "윤디자인그룹",
+    "title": "MBTI 기반 방명록 웹사이트",
+    "description": "10-20대 신규 고객층 확보를 위해, ...",
+    "image": "/images/mp-1.png",
+    "buttons": [
+      { "text": "자세히 보기", "icon": true, "link": "/posts/blog-1" }
+    ]
+  },
+  {
+    "id": 2,
+    "organization": "서울대학교 해동 주니어",
+    "title": "내면부터 알아가는 블라인드 소개팅",
+    "description": "외모보다 가치관과 취향을 중시하는 서비스를 설계하고 ...",
+    "image": "/images/mp-2.png",
+    "buttons": [
+      { "text": "자세히 보기", "icon": true, "link": "/posts/blog-2" }
+    ]
+  },
+  {
+    "id": 3,
+    "organization": "팀 프로젝트",
+    "title": "러닝크루를 위한 그룹 러닝 서비스",
+    "description": "인터뷰를 통해 사용자 그룹별 니즈를 파악하고, ...",
+    "image": "/images/mp-3.png",
+    "buttons": [
+      { "text": "자세히 보기", "icon": true, "link": "/posts/blog-3" }
+    ]
+  }
+]

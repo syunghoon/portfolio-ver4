@@ -1,0 +1,35 @@
+.home__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 0 2rem;
+}
+
+.home__toolbar-filter {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  color: var(--tertiary-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.home__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.home__canvas {
+  position: sticky;
+  top: calc(var(--header-height) + 2rem);
+}
+
+.home__projects {
+  display: flex;
+  flex-direction: column;
+}
+
